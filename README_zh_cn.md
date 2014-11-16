@@ -52,3 +52,4 @@ yes | cp /path/to/DroidSailizedIcon/apkd/* /var/lib/apkd
 ------------
 
 添加淘宝图标
+添加更多图标

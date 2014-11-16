@@ -57,3 +57,4 @@ Change log
 -------------
 
 Add Taobao Icon
+Add Several Icons
