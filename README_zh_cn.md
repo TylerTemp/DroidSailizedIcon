@@ -31,7 +31,6 @@ DroidSailzedIcon为你提供了一套SailfishOS风格的安卓图标.
    cd .droid
    devel-su
    Password: # enter your developer mode password
-   cd .droid
    python copy.py
    ```
 

@@ -34,7 +34,6 @@ Usage
    cd .droid
    devel-su
    Password: # enter your developer mode password
-   cd .droid
    python copy.py
    ```
 
