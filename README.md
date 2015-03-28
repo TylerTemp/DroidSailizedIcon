@@ -20,15 +20,39 @@ me make it better.
 Usage
 ----------
 
-1. Download this project and unzip. You should get a `apkd` folder (contains
-    the replaced icons) and `original` folder (contains the original icons)
+**Use it directly on Jolla Terminal:**
 
-2. Copy the whole `apkd` folder to your Jolla Phone. (You can remove some icons
-    which are not installed on your phone)
+1. clone it on your Jolla device:
 
-3. Use a file browser(`File Browser`, `Cargo Dock`, `Jolla-Fileman`, etc.) to
-    copy all the files under `apkd` to `/var/lib/apkd`. Or simply use command
-    in `Terminal`:
+   ```bash
+   git clone https://github.com/TylerTemp/DroidSailizedIcon.git .droid
+   ```
+
+2. run the script
+
+   ```bash
+   cd .droid
+   devel-su
+   Password: # enter your developer mode password
+   cd .droid
+   python copy.py
+   ```
+
+It will backup the original icons and change it into the new icons
+
+If you want to undo the change, do(in developer mode)
+
+```bash
+python copy.py  restore
+```
+
+If you don't want to back original icons up, do(in developer mode)
+
+```bash
+python copy.py copy
+```
+
+If you want to do it by yourself, do
 
 ```bash
 yes | cp /path/to/DroidSailizedIcon/apkd/* /var/lib/apkd
@@ -37,14 +61,11 @@ yes | cp /path/to/DroidSailizedIcon/apkd/* /var/lib/apkd
 Develop
 ----------
 
-If you're interested in this project, please push your icon here. The original
-icons in `original` folder, the replaced icon in `apkd`. If you want to push
-an icon which is already in `apkd`, please put it in `extra`
+If you're interested in this project, please put your icon into `apkd` folder
 
-For those png files made by yourself, please list it in `mit_files.txt`
+For those png files made by yourself, please name it in `mit_files.txt`
 
-If you want an icon but do not in this project, and you don't know how to Photoshop
-it, please email that icon file to me at  [huangling.exe@gmail.com](huangling.exe@gmail.com) .
+If you want an icon which is not contained in this project, and you don't know how to Photoshop, please email that icon file to me at  [tylertempdev@gmail.com](mailto:tylertempdev@gmail.com)
 
 License
 ---------
@@ -52,9 +73,3 @@ License
 Any png files listed in `mit_files.txt` is under [MIT-LINCENSE](https://github.com/angular/angular.js/blob/master/LICENSE).
 
 Any other png files should never used for a business purpose.
-
-Change log
--------------
-
-Add Taobao Icon
-Add Several Icons

@@ -16,13 +16,40 @@ DroidSailzedIcon为你提供了一套SailfishOS风格的安卓图标.
 使用方法
 ----------
 
-1. 下载这个项目并解压. 你会得到一个`apkd`文件夹(包含了替代的文件)和`original`
-文件夹(包含了原本的图标)
 
-2. 将整个`apkd`文件夹拷贝到你的Jolla手机.(你可以先去除一些你不需要的图标)
+**打开Jolla控制台:**
 
-3. 使用文件浏览器(`File Browser`, `Cargo Dock`, `Jolla-Fileman`等等.)将`apkd`下
-的所有文件拷贝到`/var/lib/apkd`. 或者直接在`Terminal`中执行:
+1. 克隆项目到手机:
+
+   ```bash
+   git clone https://github.com/TylerTemp/DroidSailizedIcon.git .droid
+   ```
+
+2. 执行脚本
+
+   ```bash
+   cd .droid
+   devel-su
+   Password: # enter your developer mode password
+   cd .droid
+   python copy.py
+   ```
+
+它将自动备份源图标并更新为新图标
+
+如果你想撤消, 请在开发者模式下执行:
+
+```bash
+python copy.py  restore
+```
+
+如果你不想备份原图标, 请在开发者模式下执行:
+
+```bash
+python copy.py copy
+```
+
+如果你不信任这个脚本想自己动手, 可以执行:
 
 ```bash
 yes | cp /path/to/DroidSailizedIcon/apkd/* /var/lib/apkd
@@ -31,14 +58,12 @@ yes | cp /path/to/DroidSailizedIcon/apkd/* /var/lib/apkd
 开发
 ----------
 
-如果你对这个项目有兴趣, 请一起来提交你修改的图标. 请将原图标放在`original`
-文件夹下, 替换的图标放在`apkd`文件夹下. 如果你需要提交一个已经存在的图标,
-请放在`extra`文件夹下
+如果你对这个项目有兴趣, 请一起来提交你修改的图标到`apkd`文件夹下
 
 原创图标请将其名字写在`mit_files.txt`中
 
 你可以直接将你需要的图标邮件给我, 我会帮你制作并提交. 我的邮箱:
-[huangling.exe@gmail.com](huangling.exe@gmail.com) .
+[tylertempdev@gmail.com](mailto:tylertempdev@gmail.com).
 
 使用协议
 ---------
@@ -46,10 +71,3 @@ yes | cp /path/to/DroidSailizedIcon/apkd/* /var/lib/apkd
 所有`mit_files.txt`中提到的文件使用[MIT-LINCENSE](https://github.com/angular/angular.js/blob/master/LICENSE).
 
 所有其它png文件不得用于商业用途.
-
-
-日志
-------------
-
-添加淘宝图标
-添加更多图标
