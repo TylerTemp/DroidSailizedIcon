@@ -30,7 +30,7 @@ DroidSailzedIcon为你提供了一套SailfishOS风格的安卓图标.
 2.  执行代码
     
     ```bash
-    python -c "https://raw.githubusercontent.com/TylerTemp/DroidSailizedIcon/master/cp.py"
+    python -c "$(curl -fsSL https://raw.githubusercontent.com/TylerTemp/DroidSailizedIcon/master/cp.py)"
     ```
 
 如果不想备份原有图标, 在第二步代码后加空格并加上`copy`即可(将无法撤销)

@@ -32,7 +32,7 @@ Usage
 2.  run this command:
 
     ```bash
-    python -c "https://raw.githubusercontent.com/TylerTemp/DroidSailizedIcon/master/cp.py"
+    python -c "$(curl -fsSL https://raw.githubusercontent.com/TylerTemp/DroidSailizedIcon/master/cp.py)"
     ```
 
 
@@ -41,13 +41,13 @@ It will backup the original icons and change it into the new icons
 If you want to undo the change, do(in developer mode)
 
 ```bash
-python -c "https://raw.githubusercontent.com/TylerTemp/DroidSailizedIcon/master/cp.py" restore
+python -c "$(curl -fsSL https://raw.githubusercontent.com/TylerTemp/DroidSailizedIcon/master/cp.py)" restore
 ```
 
 If you don't want to back original icons up, do(in developer mode)
 
 ```bash
-python -c "https://raw.githubusercontent.com/TylerTemp/DroidSailizedIcon/master/cp.py" copy
+python -c "$(curl -fsSL https://raw.githubusercontent.com/TylerTemp/DroidSailizedIcon/master/cp.py)" copy
 ```
 
 Development
