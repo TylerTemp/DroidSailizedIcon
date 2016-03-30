@@ -188,6 +188,7 @@ def get_file_names():
     apkd_launcher_tv_danmaku_bili-tv_danmaku_bili_ui_splash_SplashActivity.png
     apkd_launcher_ua_krou_memory-ua_krou_memory_activities_GameMenuActivity.png
     apkd_launcher_yong_universalplayer-com_hd_video_player_ui_MainActivity.png
+    apkd_launcher_com_medium_reader-com_medium_android_donkey_start_SignInActivity.png
     """
 
     return (x.strip() for x in s.strip().splitlines())
