@@ -19,40 +19,23 @@ DroidSailzedIcon为你提供了一套SailfishOS风格的安卓图标.
 
 **打开Jolla控制台:**
 
-1. 克隆项目到手机:
+1.  进入开发者模式:
+    
+    ```bash
+    devel-su
+    ```
 
-   ```bash
-   git clone https://github.com/TylerTemp/DroidSailizedIcon.git .droid
-   ```
+    (注: 请先在设置中开启开发者模式)
 
-2. 执行脚本
+2.  执行代码
+    
+    ```bash
+    python -c "https://raw.githubusercontent.com/TylerTemp/DroidSailizedIcon/master/cp.py"
+    ```
 
-   ```bash
-   cd .droid
-   devel-su
-   Password: # enter your developer mode password
-   python copy.py
-   ```
+如果不想备份原有图标, 在第二步代码后加空格并加上`copy`即可(将无法撤销)
 
-它将自动备份源图标并更新为新图标
-
-如果你想撤消, 请在开发者模式下执行:
-
-```bash
-python copy.py  restore
-```
-
-如果你不想备份原图标, 请在开发者模式下执行:
-
-```bash
-python copy.py copy
-```
-
-如果你不信任这个脚本想自己动手, 可以执行:
-
-```bash
-yes | cp /path/to/DroidSailizedIcon/apkd/* /var/lib/apkd
-```
+如果需要恢复图标，在第二步代码后加空格并加上`restore`即可
 
 开发
 ----------

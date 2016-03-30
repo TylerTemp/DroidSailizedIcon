@@ -22,42 +22,35 @@ Usage
 
 **Use it directly on Jolla Terminal:**
 
-1. clone it on your Jolla device:
+1.  Open Jolla Terminal and enter the superuser mode:
 
    ```bash
-   git clone https://github.com/TylerTemp/DroidSailizedIcon.git .droid
-   ```
-
-2. run the script
-
-   ```bash
-   cd .droid
    devel-su
    Password: # enter your developer mode password
-   python copy.py
    ```
+
+2.  run this command:
+
+    ```bash
+    python -c "https://raw.githubusercontent.com/TylerTemp/DroidSailizedIcon/master/cp.py"
+    ```
+
 
 It will backup the original icons and change it into the new icons
 
 If you want to undo the change, do(in developer mode)
 
 ```bash
-python copy.py  restore
+python -c "https://raw.githubusercontent.com/TylerTemp/DroidSailizedIcon/master/cp.py" restore
 ```
 
 If you don't want to back original icons up, do(in developer mode)
 
 ```bash
-python copy.py copy
+python -c "https://raw.githubusercontent.com/TylerTemp/DroidSailizedIcon/master/cp.py" copy
 ```
 
-If you want to do it by yourself, do
-
-```bash
-yes | cp /path/to/DroidSailizedIcon/apkd/* /var/lib/apkd
-```
-
-Develop
+Development
 ----------
 
 If you're interested in this project, please put your icon into `apkd` folder

@@ -1,16 +1,16 @@
-'''
+#!/usr/bin/env python
+"""
 Usage:
     copy.py [backup] [restore] [copy]
-'''
+"""
 
 import os
 import sys
 import shutil
 import logging
 
-thisdir = os.path.dirname(__file__)
-
 from lib.bashlog import getlogger
+thisdir = os.path.dirname(__file__)
 
 logger = logging.getLogger()
 
