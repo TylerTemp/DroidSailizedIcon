@@ -21,6 +21,7 @@ logger = logging.getLogger()
 
 def get_file_names():
     s = """
+    apkd_launcher_com_zentity_sbank_csobsk-com_csobsk_smartbankingv2_SplashActivity.png
     apkd_launcher_air_au_com_metro_DumbWaysToDie-air_au_com_metro_DumbWaysToDie_AppEntry.png
     apkd_launcher_air_com_RustyLake_CubeEscapeTheMill_wdj-com_pujia8_start.png
     apkd_launcher_air_com_gamebrain_twelve-air_com_gamebrain_twelve_AppEntry.png
