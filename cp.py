@@ -192,6 +192,19 @@ def get_file_names():
     apkd_launcher_com_medium_reader-com_medium_android_donkey_start_SignInActivity.png
     apkd_launcher_com_cleanmaster_mguard__cn-com_keniu_security_main_MainActivity.png
     apkd_launcher_cmb_pb-cmb_pb_ui_PBInitActivity.png
+    apkd_launcher_com_gameloft_android_ANMP_GloftG5EG_wdj-com_gameloft_android_ANMP_GloftG5EG_MainActivity.png
+    apkd_launcher_com_gongjin_cradio-com_gongjin_cradio_PlayerActivity.png
+    apkd_launcher_com_here_app_maps-com_here_app_LauncherActivity.png
+    apkd_launcher_com_jiongji_andriod_card-com_baicizhan_main_activity_LoadingPageActivity.png
+    apkd_launcher_com_netease_vopen-com_netease_vopen_activity_WelcomeActivity.png
+    apkd_launcher_com_oasisfeng_greenify-com_oasisfeng_greenify_GreenifyActivity.png
+    apkd_launcher_com_sdu_didi_psnger-com_didi_sdk_app_DidiLoadDexActivity.png
+    apkd_launcher_com_sf_activity-com_syt_ui_activity_InitActivity.png
+    apkd_launcher_com_youdao_translator-com_youdao_translator_activity_LaunchActivity.png
+    apkd_launcher_com_yellowmonkeystudios_socioball-com_prime31_UnityPlayerNativeActivity.png
+    apkd_launcher_de_robv_android_xposed_installer-de_robv_android_xposed_installer_WelcomeActivity.png
+    apkd_launcher_com_wanax_voxelexplorer-org_cocos2dx_cpp_AppActivity.png
+    apkd_launcher_com_rhinocerosstory-com_rhinocerosstory_main_ui_Welcome.png
     """
 
     return (x.strip() for x in s.strip().splitlines())
